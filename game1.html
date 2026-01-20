@@ -1,9 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 <head>
     <meta charset="utf-8">
     <title>GOOOOLEM - 詳細</title>
+
+    <!-- メインCSS -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -15,45 +20,100 @@
             <p>東京ゲームショウ展示作品</p>
         </header>
 
-        <span class="image fit"><img src="images/GOOOOLEMImage.png" alt=""></span>
+        <!-- メインビジュアル -->
+        <span class="image fit">
+            <img src="images/GOOOOLEMImage.png alt="GOOOOLEM メインビジュアル">
+        </span>
 
-        <h2>ゲーム概要</h2>
-        <p>パズルでモンスターを召喚して戦う対戦型パズルゲーム。</p>
+        <!-- スクリーンショット（スライダー） -->
+        <h2>ゲーム画面</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/GoldenFish3.png" alt="Title">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/GoldenFish2.png" alt="FEVER">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/GoldenFish1.png" alt="妨害">
+                </div>
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ゲーム概要 -->
+        <div class="game-overview">
+          <h2>ゲーム概要</h2>
+        </div>
+        <p>
+            本作『GOOOLEM』は、パズルでモンスターを召喚して戦う対戦型パズルゲームです。<br>
+            ピースとソウルを組み合わせてモンスターを召喚し、相手の城を攻めます。<br>
+            シングルプレイでは、レベルが上がり続ける勇者パーティーをどこまで耐えられるかに挑戦します。<br>
+            マルチプレイでは2人対戦で互いにモンスターを召喚し合い、相手の城のHPを0にした方が勝利となります。<br>
+            東京ゲームショウでの展示を想定して制作を開始し、<br>
+            テストプレイを通してキャラクター性能や挙動のバランス調整を行いました。<br>
+            単純なゲーム性でも戦略の幅があるのが魅力のゲームです。
+        </p>
 
         <h2>開発期間</h2>
         <p>2025年4月18日 ～ 2025年9月29日</p>
 
-        <h2>チーム</h2>
-        <p>2人</p>
-
-        <h2>担当範囲</h2>
-        <ul>
-            <li>モンスターのプログラム一部実装</li>
-            <li>人間キャラクターの一部プログラム</li>
-            <li>大砲ギミックのプログラム</li>
-            <li>一部ドット絵制作</li>
-            <li>一部SE制作</li>
-            <li>企画・バランス調整</li>
-        </ul>
-
         <h2>こだわり</h2>
-        <ul>
-            <li>大砲の反動の挙動など細かい演出をプログラムで再現</li>
-            <li>単純さと戦略性を両立させたゲーム性</li>
-            <li>コストの低いキャラクターでも活躍の場面がある</li>
-        </ul>
+        <p>
+            本作では、単に金魚をすくうだけでなく
+            「本物の金魚すくいらしさ」と「ゲームとしての気持ちよさ」の両立にこだわりました。<br>
+            魚ごとに行動パターンや速度、当たり判定を変え、
+            金魚は予測しやすく、イカやサメなどの特殊な魚は
+            リスクとリターンがはっきりするよう設計しています。<br>
+            特に魚の挙動はクラス設計で共通化し、新しい魚を追加しやすい構造にしました。<br>
+            また、魚を即座に消去せず画面外へ移動させてから削除することで、
+            突然消える違和感をなくし、自然な体験になるよう工夫しました。<br>
+            FEVERゲージや制限時間の延長といったシステムも、
+            「上手くすくえた時の高揚感」が連続するよう調整を重ねています。<br>
+            短時間でも盛り上がるゲームテンポを意識しました。
+        </p>
 
         <h2>プレイ動画</h2>
-        <p><a href="https://youtu.be/kgSB-JxukfI">YouTubeで見る</a></p>
+        <p>
+            <a href="https://youtu.be/-i0P4mB4Rvk" target="_blank" rel="noopener">
+                YouTubeで見る
+            </a>
+        </p>
 
         <h2>GitHub</h2>
-        <p><a href="https://github.com/yuma-kudo0721/KudoYuma_UnityProject_GOOOOLEM">
-            UnityプロジェクトのGitHubリポジトリはこちら
-        </a></p>
+        <p>
+            <a href="https://github.com/yuma-kudo0721/KudoYuma_UnityProject_GoldenFish"
+               target="_blank" rel="noopener">
+                UnityプロジェクトのGitHubリポジトリはこちら
+            </a>
+        </p>
 
     </section>
 
 </div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </body>
 </html>
