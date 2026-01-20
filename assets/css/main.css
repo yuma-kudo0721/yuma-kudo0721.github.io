@@ -5,6 +5,7 @@
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -4686,4 +4687,15 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+			.swiper {
+	  width: 100%;
+	  height: 400px;
+	}
+	
+	.swiper img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
 	}
