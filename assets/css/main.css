@@ -4701,4 +4701,9 @@ input, select, textarea {
 	  object-fit: cover;
 	}
 
+	.game-overview {
+  margin-top: 40px; 
+}
+
+
 
