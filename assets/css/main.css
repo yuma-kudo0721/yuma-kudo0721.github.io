@@ -4698,12 +4698,14 @@ input, select, textarea {
 	.swiper img {
 	  width: 100%;
 	  height: 100%;
+	margin-bottom: 60px;
 	  object-fit: cover;
 	}
 
 	.game-overview {
   margin-top: 60px; 
 }
+
 
 
 
