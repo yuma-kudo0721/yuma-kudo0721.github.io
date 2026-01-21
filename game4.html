@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>GOOOOLEM - 詳細</title>
+
+    <!-- メインCSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+<div id="main">
+
+    <section class="post">
+        <header class="major">
+            <h1>GOOOOLEM</h1>
+            <p>東京ゲームショウ展示作品</p>
+        </header>
+
+        <!-- メインビジュアル -->
+        <span class="image fit">
+            <img src="images/GOOOOLEMImage.png" alt="GOOOOLEM メインビジュアル">
+        </span>
+
+        <!-- スクリーンショット（スライダー） -->
+        <h2>ゲーム画面</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/GOOOOLEM1.png" alt="Title">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/GOOOOLEM2.png" alt="FEVER">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/GOOOOLEM3.png" alt="妨害">
+                </div>
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ゲーム概要 -->
+        <div class="game-overview">
+          <h2>ゲーム概要</h2>
+        </div>
+        <p>
+            本作『GOOOLEM』は、パズルでモンスターを召喚して戦う対戦型パズルゲームです。<br>
+            ピースとソウルを組み合わせてモンスターを召喚し、相手の城を攻めます。<br>
+            シングルプレイでは、レベルが上がり続ける勇者パーティーをどこまで耐えられるかに挑戦します。<br>
+            マルチプレイでは2人対戦で互いにモンスターを召喚し合い、相手の城のHPを0にした方が勝利となります。<br>
+            東京ゲームショウでの展示を想定して制作を開始し、<br>
+            テストプレイを通してキャラクター性能や挙動のバランス調整を行いました。<br>
+            単純なゲーム性でも戦略の幅があるのが魅力のゲームです。
+        </p>
+
+        <h2>開発背景</h2>
+        <p>
+            東京ゲームショウでの展示を目的として、来場者が短時間でも直感的に楽しめるオリジナルゲームを制作しました。<br>
+            初見のユーザーが多い展示環境を想定し、シンプルな操作でありながら戦略性のあるゲーム体験を目指しました。<br>
+
+        </p>
+
+        <h2>開発期間</h2>
+        <p>2025年4月18日 ～ 2025年9月29日</p>
+
+        <h2>チーム</h2>
+        <p>2人</p>
+
+        <h2>担当</h2>
+        <p>モンスター・人間キャラクターの一部プログラム、大砲のプログラム、一部ドット絵、一部SE、企画、バランス調整</p>
+
+        <h2>こだわり</h2>
+        <p>
+            開発初期のプロトタイプでは、キャラクターが出現して殴り合うだけで、戦略性やゲーム性に乏しい状態でした。<br>
+            そこで相方と何度も話し合い、少しずつルールや要素を追加してゲーム性を改善しました。<br>
+            本作では、パズルでピースを消すことでモンスターを召喚する仕組みを採用し、<br>
+            消したピースの数やソウルによって召喚されるモンスターが決まります。<br>
+            特定のピースを狙って消すことで、状況に応じたモンスターをピンポイントで召喚する必要があり、そこで戦略性を生み出しました。<br>
+            スライムはソウル1つで召喚される低コストのモンスターのため、複数ソウルで生成される「亜種モンスター」を作れない制約がありました。<br>
+            そこで代替案として、一定確率でメタルスライムが生成される仕組みを実装し、低コストのスライムにも希少性や期待感を持たせました。<br>
+            メタルスライムは通常モンスターと異なるダメージ処理を持ち、出現時に戦況が変化しやすく、プレイヤー体験の幅を広げています。<br>
+            さらにモンスター一体一体の能力を考案し、繰り返しテストプレイで攻撃力や移動速度などを調整。勝敗や使用感を基準に数値を見直し、<br>
+            運要素を残しつつ実力が反映されやすいバランスにしました。<br>
+            大砲ギミックでは発射時の反動を再現し、挙動だけでなく視覚的にも分かりやすい演出を意識しました。<br>
+            この開発を通して、試行錯誤でゲームの面白さを磨き上げ、チームで改善する重要性を学びました。<br>
+        </p>
+
+        <h2>プレイ動画</h2>
+        <p>
+            <a href="https://www.youtube.com/watch?v=kgSB-JxukfI" target="_blank" rel="noopener">
+                YouTubeで見る
+            </a>
+        </p>
+
+        <h2>GitHub</h2>
+        <p>
+            <a href="https://github.com/yuma-kudo0721/KudoYuma_UnityProject_GOOOOLEM"
+               target="_blank" rel="noopener">
+                UnityプロジェクトのGitHubリポジトリはこちら
+            </a>
+        </p>
+
+    </section>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
