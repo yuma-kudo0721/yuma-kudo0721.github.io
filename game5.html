@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Star Run - 詳細</title>
+
+    <!-- メインCSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+<div id="main">
+
+    <section class="post">
+        <header class="major">
+            <h1>Star Run</h1>
+            <p>JavaScriptで制作</p>
+        </header>
+
+        <!-- メインビジュアル -->
+        <span class="image fit">
+            <img src="images/choImage.png" alt="GOOOOLEM メインビジュアル">
+        </span>
+
+        <!-- スクリーンショット（スライダー） -->
+        <h2>ゲーム画面</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/star1.png" alt="Title">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/star2.png" alt="FEVER">
+                </div>
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ゲーム概要 -->
+        <div class="game-overview">
+          <h2>ゲーム概要</h2>
+        </div>
+        <p>
+            はらぺこ蝶の大脱出劇は蝶を操作して最後の壁を壊す爽快感を味わうゲームです。<br>
+            操作は左右移動のみでレーンに流れてくる食べ物を取りながら進んでいきます。<br>
+            丸い食べ物を食べると丸くなり、角ばった食べ物を食べると角ばっていきます。
+        </p>
+
+        <h2>開発背景</h2>
+        <p>
+            Sapporo Game Camp にて、テーマ「かくちょう」をもとに<br>
+            チーム制作として本作の開発を行いました。<br>
+            私はプログラマーとして参加し、主に蝶の実装を担当しました。<br>
+            制作期間や役割が限られる中で、プロとして活動している参加者の作業進行や<br>
+            チーム内でのコミュニケーションを間近で体験し、実務を意識した開発フローを学びました。<br>
+            仕様の共有や進捗確認を意識しながら開発を進めることで、<br>
+            チーム開発における役割理解や連携の重要性を実感しました。<br>
+            この経験は、将来会社でチーム開発を行う際にも活かせると考えています。
+        </p>
+
+        <h2>開発期間</h2>
+        <p>2025年10月18日〜10月19日</p>
+
+        <h2>チーム</h2>
+        <p>7人</p>
+
+        <h2>担当</h2>
+        <p>プレイヤー（蝶）のシステム実装</p>
+
+        <h2>こだわり</h2>
+        <p>
+            プレイヤーの見た目変化を配列で管理し、蝶の形態が増えても柔軟に対応できる拡張性の高い設計としました。
+            また、蝶が画面外に出てしまわないよう移動範囲を制限しています。
+            他メンバーが実装した食べ物から直接利用できるよう取得処理を関数として切り出し、
+            担当間の依存を減らした構成としました。
+        </p>
+
+        <h2>プレイ動画</h2>
+        <p>
+            <a href="https://youtu.be/MJKKRc57Z6o" target="_blank" rel="noopener">
+                YouTubeで見る
+            </a>
+        </p>
+
+        <h2>GitHub</h2>
+        <p>
+            <a href="https://github.com/yuma-kudo0721/KudoYuma_UnityProject_tyou"
+               target="_blank" rel="noopener">
+                UnityプロジェクトのGitHubリポジトリはこちら
+            </a>
+        </p>
+
+    </section>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
