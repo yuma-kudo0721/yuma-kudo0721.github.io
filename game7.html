@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>ループダンジョン - 詳細</title>
+
+    <!-- メインCSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+<div id="main">
+
+    <section class="post">
+        <header class="major">
+            <h1>ループダンジョン</h1>
+            <p>個人制作</p>
+        </header>
+
+        <!-- メインビジュアル -->
+        <span class="image fit">
+            <img src="images/LoopImage.png" alt="金魚すくい メインビジュアル">
+        </span>
+
+        <!-- スクリーンショット（スライダー） -->
+        <h2>ゲーム画面</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/Loop1.png" alt="Title">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Loop2.png" alt="FEVER">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Loop3.png" alt="妨害">
+                </div>
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ゲーム概要 -->
+        <div class="game-overview">
+          <h2>ゲーム概要</h2>
+        </div>
+        <p>
+           本作は、ランダム生成されるダンジョンを探索しながらフロアの踏破を目指すローグライク風2Dダンジョンゲームです。<br>
+           プレイヤーは矢印キーで移動し、Aキーで攻撃を行います。<br>
+           敵との戦闘やアイテムの使用はターン制で進行し、一手ごとの判断が重要になります。<br>
+           ダンジョンはフロアごとに構造が変化し、視界が制限されることで探索の緊張感を演出しています。<br>
+           回復薬や能力強化アイテムを活用しながら敵を倒し、階段を見つけて次のフロアへ進みます。
+        </p>
+
+        <h2>開発背景</h2>
+        <p>
+           本作は、ローグライクゲームのプロトタイプとして、ゲーム全体の設計を学ぶことを目的に制作しました。<br>
+          ランダム生成によるダンジョン構造やターン制の進行など、<br>
+          ローグライク特有のシステムを簡略化しつつ実装することで、<br>
+          キャラクターや敵、アイテムをどのように設計・管理すべきかを検証しています。<br>
+          実装を通して、機能追加や仕様変更がしやすい設計の重要性を学び、<br>
+          今後本格的なローグライクゲームを制作するための土台となる作品です。
+        </p>
+
+        <h2>開発期間</h2>
+        <p>2025年12月29日 ～ 2026年1月6日</p>
+
+        <h2>こだわり</h2>
+        <p>
+            ローグライクゲームのプロトタイプとして、後から機能を追加・変更しやすい設計を意識して実装しました。<br>
+            プレイヤー・敵・アイテムをそれぞれ役割ごとに管理し、ターン制の進行も一元的に制御することで、<br>
+            ロジックが複雑になりすぎないよう工夫しています。<br>
+            また、ダンジョン生成処理を独立させることで、マップ構造の変更やフロア追加が容易になるよう設計しました。<br>
+            視界制限やログ表示などの要素も後付けできる構造にし、試作段階でも検証を重ねやすい形を目指しています。
+        </p>
+
+        <h2>GitHub</h2>
+        <p>
+            <a href="https://github.com/yuma-kudo0721/KudoYuma_JavaScript_LoopDungeon"
+               target="_blank" rel="noopener">
+                UnityプロジェクトのGitHubリポジトリはこちら
+            </a>
+        </p>
+
+    </section>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
