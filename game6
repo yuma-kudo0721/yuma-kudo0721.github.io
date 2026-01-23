@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Fox UP - 詳細</title>
+
+    <!-- メインCSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+<div id="main">
+
+    <section class="post">
+        <header class="major">
+            <h1>Fox UP</h1>
+            <p>個人制作</p>
+        </header>
+
+        <!-- メインビジュアル -->
+        <span class="image fit">
+            <img src="images/FoxImage.png" alt="金魚すくい メインビジュアル">
+        </span>
+
+        <!-- スクリーンショット（スライダー） -->
+        <h2>ゲーム画面</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/Fox1.png" alt="Title">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Fox2.png" alt="FEVER">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Fox3.png" alt="妨害">
+                </div>
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- ゲーム概要 -->
+        <div class="game-overview">
+          <h2>ゲーム概要</h2>
+        </div>
+        <p>
+            下から迫りくる水に溺れないよう、ジャンプを駆使して<br>
+            一番上のゴールを目指すアクションゲームです。
+        </p>
+
+        <h2>開発背景</h2>
+        <p>
+           Unityで初めて制作した作品で、ゲーム開発の基礎を学ぶことを目的として制作しました。<br>
+           当たり判定やゲームループ、プレイヤー操作などの基本的な仕組みを実装しながら理解を深めています。<br>
+           本作を通して学んだ知識や経験は、その後のゲーム制作にも活かされています。
+        </p>
+
+        <h2>開発期間</h2>
+        <p>2024年5月 ～ 2025年8月</p>
+
+        <h2>こだわり</h2>
+        <p>
+            針が落ちてくるタイミングを分かりやすく伝えるため、<br>
+            演出を加えてプレイヤーが事前に危険を察知できるよう工夫しました。<br>
+            また、氷の床では滑る挙動になるようにしステージごとに操作感が変わるよう設計しています。<br>
+            風が吹いているステージでは、プレイヤーが常に風の影響を受けて動き続けるようにし、<br>
+            環境ギミックを活かしたゲーム体験を意識しました。
+        </p>
+
+        <h2>GitHub</h2>
+        <p>
+            <a href="https://github.com/yuma-kudo0721/KudoYuma_UnityProject_FoxUp"
+               target="_blank" rel="noopener">
+                UnityプロジェクトのGitHubリポジトリはこちら
+            </a>
+        </p>
+
+    </section>
+
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
