@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body class="is-preload">
 
@@ -40,8 +42,10 @@
                 <section>
                     <h3>プロフィール</h3>
                     <p>
-                        工藤優馬です。<br>
-                        UnityやJavaScriptを使ったゲーム制作の経験があり、個人制作やチーム制作に取り組んできました。
+                        工藤優馬です。大学では情報系を専攻し、ゲーム制作を中心に学んでいます。<br>
+					    UnityやJavaScriptでのゲーム制作経験があり、個人制作・チーム制作の両方に取り組みました。<br>
+					    制作したゲームは展示イベントなどで様々な人にプレイしてもらい、改善につなげています。<br>
+					    プログラマーとして、プレイヤーに楽しいゲーム体験を提供できる開発者を目指しています。
                     </p>
                 </section>
 
@@ -82,6 +86,28 @@
                     </p>
                 </section>
             </article>
+
+			<!-- スクリーンショット（スライダー） -->
+        <h2>展示での様子</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/GOOOOLEM1.png" alt="Title">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/GOOOOLEM2.png" alt="FEVER">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/GOOOOLEM3.png" alt="妨害">
+                </div>
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
         </div>
 
         <!-- Footer -->
@@ -100,5 +126,23 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
+	<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        spaceBetween: 16,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
 </body>
 </html>
+
